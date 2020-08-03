@@ -1,0 +1,20 @@
+import { Meta, Description, Props, Preview, Story } from '@storybook/addon-docs/blocks';
+
+import { Section } from '.';
+
+<Meta title="Layout/Section" component={Section} />
+
+# Section
+
+<Props of={Section} />
+
+<Preview>
+  <article>
+    <Section heading="The bottom line">
+      Now that tech has delivered on its promise to "change the world," we're learning just how much trouble all that change can wreak.
+      <Section heading="Defining the limits of privacy" size="small">
+        Facebook's position is that it doesn't need to change its basic method of tracking users under the act because it doesn't sell user data. That premise is likely to be tested as soon as this summer, when California's Attorney General will start enforcing the law.
+      </Section>
+    </Section>
+  </article>
+</Preview>

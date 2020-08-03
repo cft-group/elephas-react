@@ -1,0 +1,33 @@
+import { Meta, Description, Props, Preview, Story } from '@storybook/addon-docs/blocks';
+
+import { Button } from '.';
+
+<Meta title="Core/Button" component={Button} />
+
+# Button
+
+<Props of={Button} />
+
+<Preview>
+  <Button>Expand</Button>
+  <Button appearance="primary">Create new file</Button>
+  <Button appearance="danger">Block user</Button>
+</Preview>
+
+<Preview>
+  <Button size="small">Expand</Button>
+  <Button size="small" appearance="primary">Create new file</Button>
+  <Button size="small" appearance="danger">Block user</Button>
+</Preview>
+
+<Preview>
+  <Button size="large">Expand</Button>
+  <Button size="large" appearance="primary">Create new file</Button>
+  <Button size="large" appearance="danger">Block user</Button>
+</Preview>
+
+<Preview>
+  <Button disabled >Expand</Button>
+  <Button disabled appearance="primary">Create new file</Button>
+  <Button disabled appearance="danger">Block user</Button>
+</Preview>

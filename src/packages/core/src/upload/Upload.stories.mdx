@@ -1,0 +1,27 @@
+import { Meta, Description, Props, Preview, Story } from '@storybook/addon-docs/blocks';
+
+import { Upload } from '.';
+import { UploadReadonlyExample } from './UploadReadonlyExample';
+
+<Meta title="Core/Upload" component={Upload} />
+
+# Upload
+
+<Props of={Upload} />
+
+<Preview>
+  <Upload
+    accept="image/jpeg,image/png"
+    acceptError="Только png или jpg"
+    actionText="Выберите файлы или перетащите их сюда"
+    hint="Только png и jpg, не больше 50 КБ каждая"
+    maxFileSize={51200}
+    maxFileSizeError="Картинки должны быть меньше 50 КБ"
+    multiple={true}
+    onChange={() => null}
+  />
+</Preview>
+
+<Preview>
+  <UploadReadonlyExample />
+</Preview>

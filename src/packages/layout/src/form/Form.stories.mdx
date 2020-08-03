@@ -1,0 +1,43 @@
+import { Meta, Description, Props, Preview, Story } from '@storybook/addon-docs/blocks';
+
+import { Form, FormLine } from '.';
+import { Input } from '../../../core/src';
+
+<Meta title="Layout/Form" component={Form} />
+
+# Form
+
+<Props of={Form} />
+<Props of={FormLine} />
+
+<Preview>
+  <Form>
+    <FormLine> 
+      <Input
+        label="Дата перевода"
+        type="text"
+        value="02.04.2021"
+        width="4"
+      />
+      <Input
+        label="Время перевода"
+        type="text"
+        value="11:03"
+        width="4"
+      />
+    </FormLine>
+    <Input
+      hint="Заполнять так же, как написано в паспорте"
+      label="Где выдан паспорт"
+      type="text"
+      value="ОВД г. Новосибирска по Советскому р-ну, код 540-016"
+      width="8"
+    />
+    <Input
+      label="ОКВЭД"
+      type="number"
+      value="1"
+      width="2"
+    />
+  </Form>
+</Preview>

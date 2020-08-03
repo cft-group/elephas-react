@@ -1,0 +1,76 @@
+import { Meta, Description, Props, Preview, Story } from '@storybook/addon-docs/blocks';
+
+import { Input } from '.';
+
+<Meta title="Core/Input" component={Input} />
+
+# Input
+
+<Props of={Input} />
+
+<Preview>
+  <section className="_e_form">
+    <Input
+      appearance="error"
+      error="Cумма перевода не может быть больше 600 000 ₽"
+      label="Сумма перевода"
+      type="text"
+      value="1 000 000 ₽"
+      width="4"
+    />
+    <Input
+      hint="Заполнять так же, как написано в паспорте"
+      label="Где выдан паспорт"
+      type="text"
+      value="ОВД г. Новосибирска по Советскому р-ну, код 540-016"
+      width="8"
+    />
+    <Input
+      label="ОКВЭД"
+      type="number"
+      value="1"
+      width="2"
+    />
+    <Input
+      appearance="error"
+      error="Имя является обязательным полем"
+      label="Имя"
+      type="text"
+      width="4"
+    />
+    <Input
+      label="Фамилия"
+      type="text"
+      value="Константинопольский"
+      width="4"
+    />
+    <Input
+      appearance="readonly"
+      label="Способ перевода"
+      type="text"
+      value="Реализация несанкционированного доступа к банкоматам и платежным терминалам"
+      width="12"
+    />
+    <Input
+      appearance="disabled"
+      label="Номер обращения"
+      type="text"
+      width="6"
+    />
+    <Input
+      appearance="disabled"
+      label="Номер обращения"
+      type="text"
+      width="6"
+      value="1209489534589"
+      hint="В правоохранительные органы"
+    />
+    <Input
+      label="Городское образование"
+      type="text"
+      value="Западный Усть-Каменогорский район"
+      width="6"
+      hint="В Российской Федерации"
+    />
+  </section>
+</Preview>

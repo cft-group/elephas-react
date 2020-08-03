@@ -1,0 +1,30 @@
+import { Meta, Description, Props, Preview, Story } from '@storybook/addon-docs/blocks';
+
+import { DataList } from '.';
+
+<Meta title="Core/DataList" component={DataList} />
+
+# DataList
+
+<Props of={DataList} />
+
+<Preview>
+  <DataList
+    items={[
+      {
+        title: 'Title 1',
+        value: 'Value 1',
+      },
+      {
+        appearance: 'warning',
+        title: 'Title 2',
+        value: 'Value 2',
+      },
+      {
+        appearance: 'danger',
+        title: 'Title 3',
+        value: 'Value 3',
+      },
+    ]}
+  />
+</Preview>

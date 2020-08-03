@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "jsx": "react",
+    "allowJs": false,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "src",
+    "rootDirs": [
+      "src"
+    ],
+    "emitDecoratorMetadata": true
+  },
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "dist"
+  ]
+}

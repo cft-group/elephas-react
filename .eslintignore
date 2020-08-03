@@ -1,0 +1,4 @@
+!/.storybook
+*.d.ts
+temp_folder
+dist

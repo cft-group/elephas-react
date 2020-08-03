@@ -1,0 +1,28 @@
+{
+  "name": "@elephas/react-layout",
+  "version": "0.0.0",
+  "private": false,
+  "license": "SEE LICENSE IN LICENSE.md",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "yarn build:prepare && yarn build:rollup && yarn build:types",
+    "build:prepare": "rm -rf dist && mkdir -p dist && cp package.json dist && cp ../../../LICENSE.md dist",
+    "build:types": "../../../node_modules/.bin/tsc -p ./tsconfig.build.json",
+    "build:rollup": "../../../node_modules/.bin/rollup -c ./rollup.config.js",
+    "prepublishOnly": "yarn build"
+  },
+  "main": "elephas-react-layout.umd.min.js",
+  "module": "elephas-react-layout.esm.min.js",
+  "types": "types/index.d.ts",
+  "dependencies": {
+    "@elephas/react-core": "0.0.0"
+  },
+  "peerDependencies": {
+    "@elephas/core": "^1.0.0-beta.10",
+    "@elephas/layout": "^1.0.0-beta.10",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}
