@@ -1,5 +1,5 @@
 import React, { MouseEvent, KeyboardEvent } from 'react';
-import { render, cleanup, fireEvent } from '@testing-library/react';
+import { render, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
 import FileItem from './FileItem';
@@ -12,8 +12,6 @@ describe('<FileItem />', () => {
     singleFileMaxSizeError = 'Превышен максимально допустимый размер файла';
     onDelete = jest.fn();
   });
-
-  afterEach(cleanup);
 
   it('should display an error about file max size exceeding', () => {
     const { getByText } = render(

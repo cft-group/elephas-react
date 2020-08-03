@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, fireEvent, cleanup } from '@testing-library/react';
+import { render, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
 import { Upload } from './Upload';
@@ -14,8 +14,6 @@ describe('<Upload />', () => {
     });
     onChange = jest.fn();
   });
-
-  afterEach(cleanup);
 
   it('should display a file when file is provided', () => {
     const { getAllByTestId } = render(<Upload files={file} actionText="Выберите файл" onChange={onChange} />);

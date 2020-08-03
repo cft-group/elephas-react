@@ -1,12 +1,9 @@
 import React from 'react';
-import {
-  render, fireEvent, cleanup,
-} from '@testing-library/react';
+import { render, fireEvent } from '@testing-library/react';
 
 import { Button } from '.';
 
 describe('<Button />', () => {
-  afterEach(cleanup);
   const getButton = (el: HTMLElement): HTMLButtonElement | null => el.querySelector('button');
 
   it('should have rendered text', () => {
