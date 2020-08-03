@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  render, fireEvent, cleanup,
-} from '@testing-library/react';
+import { render, fireEvent } from '@testing-library/react';
 
 import { Checkbox } from './Checkbox';
 import { CheckboxProps } from './types';
@@ -12,8 +10,6 @@ describe('<Checkbox />', () => {
   };
   const getInput = (el: HTMLElement): HTMLInputElement | null => el.querySelector('input');
   const getLabel = (el: HTMLElement): HTMLLabelElement | null => el.querySelector('label');
-
-  afterEach(cleanup);
 
   it('should have ref', () => {
     const ref = React.createRef<HTMLInputElement>();

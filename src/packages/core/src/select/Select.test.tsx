@@ -1,12 +1,9 @@
 import React from 'react';
-import {
-  render, cleanup,
-} from '@testing-library/react';
+import { render } from '@testing-library/react';
 
 import { Select } from '.';
 
 describe('<Select />', () => {
-  afterEach(cleanup);
   const getSelect = (el: HTMLElement): HTMLSelectElement | null => el.querySelector('select');
 
   it('should have ref', () => {

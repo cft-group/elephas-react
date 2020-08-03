@@ -24,7 +24,8 @@ module.exports = {
       'ignoreTrailingComments': true,
       'ignoreUrls': true,
     }],
-    'import/prefer-default-export': 'off'
+    'import/prefer-default-export': 'off',
+    'react/require-default-props': 'off'
   },
   settings: {
     react: {

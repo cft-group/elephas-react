@@ -14,6 +14,7 @@ import { Tag } from './tag';
 import { Textarea } from './textarea';
 import { Tooltip } from './tooltip';
 import { Upload } from './upload';
+import { RadioGroup } from './radio-group';
 
 export {
   Action,
@@ -34,4 +35,5 @@ export {
   Textarea,
   Tooltip,
   Upload,
+  RadioGroup,
 };
