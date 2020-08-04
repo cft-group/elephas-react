@@ -3,14 +3,14 @@ import { CommonAttributes } from '../../../../common';
 
 export interface SectionProps extends CommonAttributes {
   /**
-   * Additional CSS class.
-   */
-  className?: string;
-
-  /**
    * Form contents.
    */
   children: ReactNode;
+
+  /**
+   * Additional CSS class.
+   */
+  className?: string;
 
   /**
    * Section heading.

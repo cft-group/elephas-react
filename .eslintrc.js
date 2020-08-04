@@ -12,7 +12,11 @@ module.exports = {
     },
     project: "./tsconfig.json",
   },
-  plugins: ['jest', 'import'],
+  plugins: [
+    'jest',
+    'import',
+    'typescript-sort-keys',
+  ],
   rules: {
     'react/jsx-props-no-spreading': 'off',
     'react/jsx-fragments': 'off',
@@ -25,7 +29,8 @@ module.exports = {
       'ignoreUrls': true,
     }],
     'import/prefer-default-export': 'off',
-    'react/require-default-props': 'off'
+    'react/require-default-props': 'off',
+    'typescript-sort-keys/interface': 'error',
   },
   settings: {
     react: {

@@ -9,11 +9,6 @@ export interface ButtonProps extends CommonAttributes {
   appearance?: 'default' | 'danger' | 'primary';
 
   /**
-   * Button disabled state.
-   */
-  disabled?: boolean;
-
-  /**
    * Button contents.
    */
   children: ReactNode;
@@ -22,6 +17,11 @@ export interface ButtonProps extends CommonAttributes {
    * Additional CSS class.
    */
   className?: string;
+
+  /**
+   * Button disabled state.
+   */
+  disabled?: boolean;
 
   /**
    * Click handler.

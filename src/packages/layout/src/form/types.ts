@@ -3,24 +3,24 @@ import { CommonAttributes } from '../../../../common';
 
 export interface FormProps extends CommonAttributes {
   /**
-   * Additional CSS class.
-   */
-  className?: string;
-
-  /**
    * Form contents.
    */
   children: ReactNode;
+
+  /**
+   * Additional CSS class.
+   */
+  className?: string;
 }
 
 export interface FormLineProps {
   /**
-   * Additional CSS class.
-   */
-  className?: string;
-
-  /**
    * Form line contents.
    */
   children: ReactNode;
+
+  /**
+   * Additional CSS class.
+   */
+  className?: string;
 }
