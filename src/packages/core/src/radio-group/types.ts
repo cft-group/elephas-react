@@ -2,8 +2,15 @@ import { ChangeEventHandler } from 'react';
 import { CommonAttributes } from 'common';
 
 interface RadioGroupOption {
-  value: string;
+  /**
+   * Radio option title.
+   */
   title: string;
+
+  /**
+   * Radio option value.
+   */
+  value: string;
 }
 
 export interface RadioGroupProps extends CommonAttributes {
@@ -11,38 +18,47 @@ export interface RadioGroupProps extends CommonAttributes {
    * Additional CSS class.
    */
   className?: string;
+
   /**
-   * RadioGroup readonly state.
-   * @default false
-   */
-  readonly?: boolean;
-  /**
-   * RadioGroup disabled state.
+   * Radio group disabled state.
    * @default false
    */
   disabled?: boolean;
+
   /**
-   * RadioGroup id.
+   * Radio group id.
    */
   id?: string;
+
   /**
-   * Value of the selected radio button.
-   */
-  value: string;
-  /**
-   * RadioGroup legend.
+   * Radio group legend.
    */
   legend?: string;
+
   /**
-   * RadioGroup name.
+   * Radio group name.
+   * @default ''
    */
   name: string;
+
   /**
    * Change handler.
    */
   onChange: ChangeEventHandler<HTMLInputElement>;
+
   /**
-   * RadioGroup options
+   * Radio group options.
    */
   options: RadioGroupOption[];
+
+  /**
+   * Radio group readonly state.
+   * @default false
+   */
+  readonly?: boolean;
+
+  /**
+   * Value of selected option.
+   */
+  value: string;
 }
