@@ -15,7 +15,7 @@
   },
   "main": "elephas-react-layout.umd.min.js",
   "module": "elephas-react-layout.esm.min.js",
-  "types": "types/index.d.ts",
+  "types": "types/packages/layout/src/index.d.ts",
   "dependencies": {
     "@elephas/react-core": "1.0.0-beta.5"
   },

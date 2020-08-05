@@ -15,7 +15,7 @@
   },
   "main": "elephas-react-core.umd.min.js",
   "module": "elephas-react-core.esm.min.js",
-  "types": "types/index.d.ts",
+  "types": "types/packages/core/src/index.d.ts",
   "peerDependencies": {
     "@elephas/core": "^1.0.0-beta.10",
     "mime": "^2.4.6",
