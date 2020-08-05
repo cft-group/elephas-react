@@ -1,0 +1,21 @@
+import { Meta, Description, Props, Preview, Story } from '@storybook/addon-docs/blocks';
+
+import { Info } from '.';
+
+<Meta title="Core/Info" component={Info} />
+
+# Info
+
+<Props of={Info} />
+
+<Preview>
+  <Story name="warning">
+    <Info appearance="warning">Для регистрации заявки требуется электронная подпись.</Info>
+  </Story>
+</Preview>
+
+<Preview>
+  <Story name="error">
+    <Info appearance="error" fixedWidth>Внимание! После того, как вы нажмёте «Создать заявку», её нельзя будет отредактировать.</Info>
+  </Story>
+</Preview>

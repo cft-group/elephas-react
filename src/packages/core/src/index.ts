@@ -6,15 +6,16 @@ import { Button } from './button';
 import { Checkbox } from './checkbox';
 import { DataList } from './datalist';
 import { Fieldset } from './fieldset';
+import { Info } from './info';
 import { Input } from './input';
 import { Radio } from './radio';
+import { RadioGroup } from './radio-group';
 import { Select } from './select';
 import { Tab, Tabs } from './tabs';
 import { Tag } from './tag';
 import { Textarea } from './textarea';
 import { Tooltip } from './tooltip';
 import { Upload } from './upload';
-import { RadioGroup } from './radio-group';
 
 export {
   Action,
@@ -26,14 +27,15 @@ export {
   Checkbox,
   DataList,
   Fieldset,
+  Info,
   Input,
   Select,
   Radio,
+  RadioGroup,
   Tab,
   Tabs,
   Tag,
   Textarea,
   Tooltip,
   Upload,
-  RadioGroup,
 };
