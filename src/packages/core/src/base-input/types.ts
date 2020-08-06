@@ -1,15 +1,15 @@
 import {
-  ChangeEventHandler,
-  FocusEventHandler,
   InputHTMLAttributes,
-  KeyboardEventHandler,
   TextareaHTMLAttributes,
   ReactElement,
 } from 'react';
 
-export type HTMLAttributesComposite = InputHTMLAttributes<HTMLElement> | TextareaHTMLAttributes<HTMLElement>;
+export type HTMLAttributesComposite =
+    | InputHTMLAttributes<HTMLInputElement>
+    | TextareaHTMLAttributes<HTMLTextAreaElement>
+    | InputHTMLAttributes<HTMLSelectElement>;
 
-export type AbstractInput = {
+export type AbstractInput<T extends HTMLAttributesComposite> = T & {
   /**
    * Visual appearance.
    * @default default
@@ -37,43 +37,12 @@ export type AbstractInput = {
   label: string;
 
   /**
-   * Field name.
-   * @default ''
-   */
-  name?: string;
-
-  /**
-   * Blur handler.
-   */
-  onBlur?: FocusEventHandler<HTMLElement>;
-
-  /**
-   * Change handler.
-   */
-  onChange?: ChangeEventHandler<HTMLElement>;
-
-  /**
-   * Focus handler.
-   */
-  onFocus?: FocusEventHandler<HTMLElement>;
-
-  /**
-   * KeyDown handler.
-   */
-  onKeyDown?: KeyboardEventHandler<HTMLElement>;
-
-  /**
-   * Field value.
-   */
-  value?: string | string[] | number;
-
-  /**
    * Field width.
    * @default 100%
    */
   width?: '2' | '4' | '6' | '8' | '12' | '100%';
 };
 
-export interface BaseInputProps extends AbstractInput {
-  children: ReactElement<HTMLAttributesComposite>;
-}
+export type BaseInputProps<T extends HTMLAttributesComposite> = AbstractInput<T> & {
+  children: ReactElement<T>;
+};

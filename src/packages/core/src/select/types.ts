@@ -1,3 +1,4 @@
+import { InputHTMLAttributes } from 'react';
 import { AbstractInput } from '../base-input/types';
 
 type Option = {
@@ -12,7 +13,7 @@ type Option = {
   value: string;
 };
 
-export interface SelectProps extends AbstractInput {
+export type SelectProps = AbstractInput<InputHTMLAttributes<HTMLSelectElement>> & {
   /**
    * Default value for uncontrolled input.
    */
@@ -22,4 +23,4 @@ export interface SelectProps extends AbstractInput {
    * Select options.
    */
   options: Option[];
-}
+};
