@@ -7,7 +7,6 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
   (props: InputProps, ref: Ref<HTMLInputElement>) => {
     const {
       defaultValue,
-      type = 'text',
       ...rest
     } = props;
 
@@ -15,7 +14,6 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
       <BaseInput {...rest}>
         <input
           defaultValue={defaultValue}
-          type={type}
           ref={ref}
         />
       </BaseInput>

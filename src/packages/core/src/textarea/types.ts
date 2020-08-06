@@ -1,14 +1,9 @@
+import { TextareaHTMLAttributes } from 'react';
 import { AbstractInput } from '../base-input/types';
 
-export interface TextareaProps extends AbstractInput {
+export type TextareaProps = AbstractInput<TextareaHTMLAttributes<HTMLTextAreaElement>> & {
   /**
    * Default value for uncontrolled input.
    */
   defaultValue?: string;
-
-  /**
-   * Textarea row attribute.
-   * @default 3
-   */
-  rows: number
-}
+};

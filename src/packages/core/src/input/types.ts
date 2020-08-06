@@ -1,14 +1,9 @@
+import { InputHTMLAttributes } from 'react';
 import { AbstractInput } from '../base-input/types';
 
-export interface InputProps extends AbstractInput {
+export type InputProps = AbstractInput<InputHTMLAttributes<HTMLInputElement>> & {
   /**
    * Default value for uncontrolled input.
    */
   defaultValue?: string;
-
-  /**
-   * Input type.
-   * @default text
-   */
-  type?: string;
-}
+};

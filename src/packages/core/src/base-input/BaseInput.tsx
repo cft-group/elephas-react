@@ -1,9 +1,9 @@
 import React, { cloneElement } from 'react';
 import classNames from 'classnames';
 
-import { BaseInputProps } from './types';
+import { BaseInputProps, HTMLAttributesComposite } from './types';
 
-export function BaseInput(props: BaseInputProps) {
+export function BaseInput<T extends HTMLAttributesComposite>(props: BaseInputProps<T>) {
   const {
     appearance = 'default',
     children,
