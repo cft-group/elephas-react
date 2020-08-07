@@ -11,13 +11,8 @@ export function BaseInput<T extends HTMLAttributesComposite>(props: BaseInputPro
     error,
     hint,
     label,
-    name = '',
-    onBlur,
-    onChange,
-    onFocus,
-    onKeyDown,
-    value,
     width = '100%',
+    icons,
     ...rest
   } = props;
 
@@ -34,25 +29,24 @@ export function BaseInput<T extends HTMLAttributesComposite>(props: BaseInputPro
       {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
       <label className="_e_input__field">
         {
-          cloneElement(children, {
+          cloneElement<T>(children, {
             className: '_e_input__control',
             disabled: appearance === 'disabled',
-            name,
-            onChange,
-            onFocus,
-            onBlur,
-            onKeyDown,
             placeholder: ' ',
             readOnly: appearance === 'readonly',
-            value,
             ...rest,
           })
-        }
+         }
         <span className="_e_input__label">
           { label }
         </span>
         <span className="_e_input__background" />
         <span className="_e_input__line" />
+        { icons && (
+          <div className="_e_input__icon">
+            { icons }
+          </div>
+        )}
       </label>
       {
         hint
