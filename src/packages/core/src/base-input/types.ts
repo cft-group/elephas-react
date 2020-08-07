@@ -2,12 +2,13 @@ import {
   InputHTMLAttributes,
   TextareaHTMLAttributes,
   ReactElement,
+  ReactNode,
 } from 'react';
 
 export type HTMLAttributesComposite =
     | InputHTMLAttributes<HTMLInputElement>
-    | TextareaHTMLAttributes<HTMLTextAreaElement>
-    | InputHTMLAttributes<HTMLSelectElement>;
+    | InputHTMLAttributes<HTMLSelectElement>
+    | TextareaHTMLAttributes<HTMLTextAreaElement>;
 
 export type AbstractInput<T extends HTMLAttributesComposite> = T & {
   /**
@@ -30,6 +31,8 @@ export type AbstractInput<T extends HTMLAttributesComposite> = T & {
    * Hint message. Hidden when appearance is set to `error`.
    */
   hint?: string;
+
+  icons?: ReactNode,
 
   /**
    * Field label.
