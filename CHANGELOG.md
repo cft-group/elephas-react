@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.7](https://github.com/cft-group/elephas-react/compare/v1.0.0-beta.6...v1.0.0-beta.7) (2020-08-10)
+
+
+### Features
+
+* **base-input:** add icons props ([e5327bd](https://github.com/cft-group/elephas-react/commit/e5327bdf5a9e2f9e5da7ac89cf345bfa7af50c03))
+
+
+
+
+
 # [1.0.0-beta.6](https://github.com/cft-group/elephas-react/compare/v1.0.0-beta.5...v1.0.0-beta.6) (2020-08-05)
 
 
