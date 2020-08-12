@@ -14,7 +14,7 @@ export interface BadgeProps extends CommonAttributes {
 
   /**
    * Badge text.
-   * @default default
+   * @default ''
    */
   text?: string;
 }
