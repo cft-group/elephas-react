@@ -1,6 +1,6 @@
 {
   "name": "@elephas/react-layout",
-  "version": "1.0.0-beta.7",
+  "version": "1.0.0",
   "private": false,
   "license": "SEE LICENSE IN LICENSE.md",
   "publishConfig": {
@@ -17,7 +17,7 @@
   "module": "elephas-react-layout.esm.min.js",
   "types": "types/packages/layout/src/index.d.ts",
   "dependencies": {
-    "@elephas/react-core": "1.0.0-beta.7"
+    "@elephas/react-core": "1.0.0"
   },
   "peerDependencies": {
     "@elephas/core": "^1.0.0",
