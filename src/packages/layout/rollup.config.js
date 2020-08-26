@@ -16,6 +16,7 @@ const extensions = [
 const globals = {
   react: 'React',
   'react-dom': 'ReactDOM',
+  mime: 'Mime',
 };
 
 const getOutputFileName = (name) => path.resolve(__dirname, './dist', name);

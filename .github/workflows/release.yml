@@ -34,6 +34,8 @@ jobs:
         persist-credentials: false
     - name: Install dependencies
       run: yarn install
+    - name: Bootstrap packages
+      run: ./node_modules/.bin/lerna bootstrap
     - name: Build storybook
       run: yarn build-storybook    
     - name: Deploy to gh-pages

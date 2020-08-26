@@ -4,14 +4,15 @@
   "private": false,
   "license": "SEE LICENSE IN LICENSE.md",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "directory": "dist"
   },
   "scripts": {
     "build": "yarn build:prepare && yarn build:rollup && yarn build:types",
     "build:prepare": "rm -rf dist && mkdir -p dist && cp package.json dist && cp ../../../LICENSE.md dist",
     "build:types": "../../../node_modules/.bin/tsc -p ./tsconfig.build.json",
     "build:rollup": "../../../node_modules/.bin/rollup -c ./rollup.config.js",
-    "prepublishOnly": "yarn build"
+    "prepublish": "yarn build"
   },
   "main": "elephas-react-core.umd.min.js",
   "module": "elephas-react-core.esm.min.js",
