@@ -9,7 +9,6 @@ export function Button(props: ButtonProps) {
     disabled = false,
     children,
     className,
-    onClick,
     size = 'default',
     type = 'button',
     ...rest
@@ -29,7 +28,6 @@ export function Button(props: ButtonProps) {
     <button
       className={buttonClassNames}
       disabled={disabled}
-      onClick={onClick}
       // https://github.com/yannickcr/eslint-plugin-react/issues/1555
       // eslint-disable-next-line react/button-has-type
       type={type}
