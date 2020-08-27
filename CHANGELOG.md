@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/cft-group/elephas-react/compare/v1.0.0...v1.1.0) (2020-08-27)
+
+
+### Bug Fixes
+
+* **button:** add ButtonHTMLAttributes to ButtonProps interface ([8571f81](https://github.com/cft-group/elephas-react/commit/8571f817b1de469469150c5cb7d59b797bd0db45))
+
+
+### Features
+
+* **sidebar:** add sidebar components ([e3a9bd0](https://github.com/cft-group/elephas-react/commit/e3a9bd002aecc3b11d90d790583d4f8aaeccc58b))
+
+
+
+
+
 # [1.0.0](https://github.com/cft-group/elephas-react/compare/v1.0.0-beta.7...v1.0.0) (2020-08-14)
 
 **Note:** Version bump only for package @elephas/react-root
