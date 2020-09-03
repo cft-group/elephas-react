@@ -1,6 +1,6 @@
 import { ChangeEventHandler, InputHTMLAttributes } from 'react';
 
-export interface RadioProps extends InputHTMLAttributes<HTMLElement> {
+export interface RadioProps extends InputHTMLAttributes<HTMLInputElement> {
   /**
    * Radio checked state.
    */
