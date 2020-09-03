@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/cft-group/elephas-react/compare/v1.1.0...v1.1.1) (2020-09-03)
+
+
+### Bug Fixes
+
+* **radio:** set correct input type, remove useless destruction props ([69bf60d](https://github.com/cft-group/elephas-react/commit/69bf60d5f486248f4600e16c0c3607616876e365))
+
+
+
+
+
 # [1.1.0](https://github.com/cft-group/elephas-react/compare/v1.0.0...v1.1.0) (2020-08-27)
 
 
