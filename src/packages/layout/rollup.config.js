@@ -17,6 +17,7 @@ const globals = {
   react: 'React',
   'react-dom': 'ReactDOM',
   mime: 'Mime',
+  '@elephas/react-core': 'ElephasReactCore',
 };
 
 const getOutputFileName = (name) => path.resolve(__dirname, './dist', name);
