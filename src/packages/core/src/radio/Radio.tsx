@@ -5,17 +5,12 @@ import { RadioProps } from './types';
 
 export const Radio = forwardRef<HTMLInputElement, RadioProps>((props: RadioProps, ref: Ref<HTMLInputElement>) => {
   const {
-    checked,
     className,
     defaultChecked,
     disabled = false,
     id,
     label,
-    name = '',
-    onChange,
     readonly = false,
-    required,
-    value = '',
     ...rest
   } = props;
 
@@ -31,18 +26,13 @@ export const Radio = forwardRef<HTMLInputElement, RadioProps>((props: RadioProps
       htmlFor={id}
     >
       <input
-        checked={checked}
         className="_e_radio__input"
         defaultChecked={defaultChecked}
         disabled={disabled || readonly}
         id={id}
-        name={name}
-        onChange={onChange}
         readOnly={readonly}
         ref={ref}
-        required={required}
-        type="checkbox"
-        value={value}
+        type="radio"
         {...rest}
       />
       <span className="_e_radio__icon" />
