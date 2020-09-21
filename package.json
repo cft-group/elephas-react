@@ -78,5 +78,8 @@
     "ts-loader": "^8.0.1",
     "typescript": "^3.9.5",
     "webpack": "^4.43.0"
+  },
+  "resolutions": {
+    "@types/node": "14.0.27"
   }
 }
