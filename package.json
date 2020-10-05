@@ -19,8 +19,8 @@
     }
   },
   "dependencies": {
-    "@elephas/core": "^1.0.0",
-    "@elephas/layout": "^1.0.0",
+    "@elephas/core": "^1.1.0",
+    "@elephas/layout": "^1.1.0",
     "mime": "^2.4.6",
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
