@@ -11,6 +11,7 @@ import { Input } from './input';
 import { Radio } from './radio';
 import { RadioGroup } from './radio-group';
 import { Select } from './select';
+import { Snackbar } from './snackbar';
 import { Spinner } from './spinner';
 import { Tab, Tabs } from './tabs';
 import { Tag } from './tag';
@@ -31,6 +32,7 @@ export {
   Info,
   Input,
   Select,
+  Snackbar,
   Spinner,
   Radio,
   RadioGroup,
