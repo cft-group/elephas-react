@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import classNames from 'classnames';
 import { SnackbarProps } from './types';
-import { Button } from '..';
+import { Button } from '../button';
 
 export function Snackbar(props: SnackbarProps) {
   const {
