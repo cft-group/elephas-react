@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/cft-group/elephas-react/compare/v1.2.0...v1.2.1) (2020-10-07)
+
+
+### Bug Fixes
+
+* add snackbar to import ([ed4aa4f](https://github.com/cft-group/elephas-react/commit/ed4aa4f5a7806c15bdf4ebb81becc115db242b29))
+
+
+
+
+
 # [1.2.0](https://github.com/cft-group/elephas-react/compare/v1.1.1...v1.2.0) (2020-10-06)
 
 
