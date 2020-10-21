@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.2](https://github.com/cft-group/elephas-react/compare/v1.2.1...v1.2.2) (2020-10-21)
+
+
+### Bug Fixes
+
+* **select:** add arrow icon ([54f9399](https://github.com/cft-group/elephas-react/commit/54f93991a374230fd879345c56808da984fd2f9d))
+
+
+
+
+
 ## [1.2.1](https://github.com/cft-group/elephas-react/compare/v1.2.0...v1.2.1) (2020-10-07)
 
 
