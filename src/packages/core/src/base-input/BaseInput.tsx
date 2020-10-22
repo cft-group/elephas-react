@@ -13,6 +13,7 @@ export function BaseInput<T extends HTMLAttributesComposite>(props: BaseInputPro
     label,
     width = '100%',
     icons,
+    isIconPassive = false,
     ...rest
   } = props;
 
@@ -21,6 +22,11 @@ export function BaseInput<T extends HTMLAttributesComposite>(props: BaseInputPro
     _e_input: true,
     [`_e_input_size_${width}`]: width !== '100%',
     [`_e_input_appearance_${appearance}`]: appearance !== 'default',
+  });
+
+  const inputIconClassNames = classNames({
+    _e_input__icon: true,
+    _e_input__icon_passive: isIconPassive,
   });
 
   return (
@@ -43,7 +49,7 @@ export function BaseInput<T extends HTMLAttributesComposite>(props: BaseInputPro
         <span className="_e_input__background" />
         <span className="_e_input__line" />
         { icons && (
-          <div className="_e_input__icon">
+          <div className={inputIconClassNames}>
             { icons }
           </div>
         )}

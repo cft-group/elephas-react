@@ -35,6 +35,12 @@ export type AbstractInput<T extends HTMLAttributesComposite> = T & {
   icons?: ReactNode,
 
   /**
+   * Disables pointer events for icons.
+   * @default false
+   */
+  isIconPassive?: boolean;
+
+  /**
    * Field label.
    */
   label: string;
