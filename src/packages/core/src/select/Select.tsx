@@ -24,7 +24,12 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>(
     const selectClassName = className ? `${className} _e_select` : '_e_select';
 
     return (
-      <BaseInput className={selectClassName} {...rest} icons={ArrowIcon}>
+      <BaseInput
+        className={selectClassName}
+        {...rest}
+        icons={ArrowIcon}
+        isIconPassive
+      >
         <select
           defaultValue={defaultValue}
           ref={ref}
