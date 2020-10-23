@@ -10,6 +10,7 @@ export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
       checked,
       className,
       defaultChecked,
+      description,
       disabled = false,
       id,
       label,
@@ -50,6 +51,7 @@ export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
         <span className="_e_checkbox__icon" />
         <span className="_e_checkbox__label">
           { label }
+          { description && <span className="_e_checkbox__desc">{ description }</span> }
         </span>
       </label>
     );
