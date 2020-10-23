@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/cft-group/elephas-react/compare/v1.2.2...v1.3.0) (2020-10-23)
+
+
+### Bug Fixes
+
+* **select:** set icon to be passive ([52e34b3](https://github.com/cft-group/elephas-react/commit/52e34b331c4bfe917bfffd264d6d6925e2419bdb))
+
+
+### Features
+
+* **base-input:** add "isIconPassive" flag ([964c4e4](https://github.com/cft-group/elephas-react/commit/964c4e48a3b6c4e991601321a4c56eb2524c1c14))
+* **checkbox:** add description field ([ab9b3d3](https://github.com/cft-group/elephas-react/commit/ab9b3d30785d09b3e5abc9fd99ec506224b0f667))
+* **radio:** add description field ([467fcf8](https://github.com/cft-group/elephas-react/commit/467fcf87e6244cdba18fe2d67ca1f7cf6adf382d))
+
+
+
+
+
 ## [1.2.2](https://github.com/cft-group/elephas-react/compare/v1.2.1...v1.2.2) (2020-10-21)
 
 
