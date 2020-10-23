@@ -7,6 +7,7 @@ export const Radio = forwardRef<HTMLInputElement, RadioProps>((props: RadioProps
   const {
     className,
     defaultChecked,
+    description,
     disabled = false,
     id,
     label,
@@ -38,6 +39,7 @@ export const Radio = forwardRef<HTMLInputElement, RadioProps>((props: RadioProps
       <span className="_e_radio__icon" />
       <span className="_e_radio__label">
         { label }
+        { description && <span className="_e_radio__desc">{ description }</span> }
       </span>
     </label>
   );

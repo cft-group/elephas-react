@@ -17,6 +17,11 @@ export interface RadioProps extends InputHTMLAttributes<HTMLInputElement> {
   defaultChecked?: boolean;
 
   /**
+   * Radio description.
+   */
+  description?: string;
+
+  /**
    * Radio disabled state.
    * @default false
    */
