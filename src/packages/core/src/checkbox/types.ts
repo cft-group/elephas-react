@@ -17,6 +17,11 @@ export interface CheckboxProps extends InputHTMLAttributes<HTMLElement> {
   defaultChecked?: boolean;
 
   /**
+   * Checkbox description.
+   */
+  description?: string;
+
+  /**
    * Checkbox disabled state.
    * @default false
    */
