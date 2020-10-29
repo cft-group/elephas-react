@@ -16,13 +16,13 @@ export function SnackbarExample() {
   return (
     <>
       <Button onClick={handleClick}>
-        Snackbar
+        Open Snackbar
       </Button>
       <Snackbar
         onClose={handleClose}
         isOpen={isOpen}
-        buttonText="Отменить"
-        message="Сохранить изменения"
+        buttonText="Cancel"
+        message="Changes saved."
       />
     </>
   );

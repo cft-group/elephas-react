@@ -44,12 +44,12 @@ export function Snackbar(props: SnackbarProps) {
     <div className={snackbarClassNames}>
       <div className="_e_snackbar__text">
         {message}
-        <span className="_e_snackbar__timer">
-          :
-          {autoHideDuration}
-        </span>
       </div>
-      <Button onClick={onClose} className="_e_snackbar__button _e_button">{buttonText}</Button>
+      <Button onClick={onClose} className="_e_snackbar__button _e_button">
+        {buttonText}
+        {' :'}
+        {autoHideDuration.toString().padStart(2, '0')}
+      </Button>
     </div>
   );
 }
