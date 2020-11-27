@@ -3,6 +3,11 @@ import { CommonAttributes } from 'common';
 
 interface RadioGroupOption {
   /**
+   * Radio description.
+   */
+  description?: string;
+
+  /**
    * Radio option title.
    */
   title: string;
