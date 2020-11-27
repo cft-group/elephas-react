@@ -30,6 +30,7 @@ export const RadioGroup = (props: RadioGroupProps) => {
     <Radio
       key={option.value}
       label={option.title}
+      description={option.description}
       checked={option.value === value}
       disabled={disabled}
       readonly={readonly}

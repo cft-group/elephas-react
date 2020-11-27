@@ -15,12 +15,12 @@ import { RadioGroup } from '.';
     () => {
       const [value, setValue] = useState('1');
       return <RadioGroup
-          name="option"
+          name="option1"
           label="Options"
           value={value}
           onChange={event => setValue(event.target.value)}
           options={[
-            { value: '1', title: 'option 1' },
+            { value: '1', title: 'option 1', description: 'option 1 description' },
             { value: '2', title: 'option 2' },
           ]}
         />
@@ -35,7 +35,7 @@ import { RadioGroup } from '.';
     () => {
       const [value, setValue] = useState('1');
       return <RadioGroup
-          name="option"
+          name="option2"
           label="Options"
           readonly
           value={value}
@@ -56,7 +56,7 @@ import { RadioGroup } from '.';
     () => {
       const [value, setValue] = useState('1');
       return <RadioGroup
-          name="option"
+          name="option3"
           label="Options"
           disabled
           value={value}
