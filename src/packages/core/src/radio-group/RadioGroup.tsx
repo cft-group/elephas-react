@@ -15,6 +15,8 @@ export const RadioGroup = (props: RadioGroupProps) => {
     readonly = false,
     onChange,
     options,
+    error,
+    hint,
     ...rest
   } = props;
 
@@ -41,7 +43,14 @@ export const RadioGroup = (props: RadioGroupProps) => {
   ));
 
   return (
-    <Fieldset {...rest} className={className} id={id} legend={legend}>
+    <Fieldset
+      className={className}
+      id={id}
+      legend={legend}
+      error={error}
+      hint={hint}
+      {...rest}
+    >
       {renderOptions}
     </Fieldset>
   );

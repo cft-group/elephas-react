@@ -31,6 +31,16 @@ export interface RadioGroupProps extends CommonAttributes {
   disabled?: boolean;
 
   /**
+   * Error message.
+   */
+  error?: string;
+
+  /**
+   * Hint message. Hidden when `error` is not empty.
+   */
+  hint?: string;
+
+  /**
    * Radio group id.
    */
   id?: string;
