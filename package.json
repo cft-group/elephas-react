@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "license": "SEE LICENSE IN LICENSE",
   "scripts": {
-    "storybook": "start-storybook -p 6006 --docs -s ./static",
-    "build-storybook": "build-storybook -c .storybook -o build --docs -s ./static",
+    "storybook": "start-storybook -p 6006 --docs",
+    "build-storybook": "build-storybook -c .storybook -o build --docs",
     "lint": "node_modules/.bin/eslint -c ./.eslintrc.js src/ --ext .js,.ts,.jsx,.tsx",
     "test": "jest",
     "test:watch": "jest --watch",
