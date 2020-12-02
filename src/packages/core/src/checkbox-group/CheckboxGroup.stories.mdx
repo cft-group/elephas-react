@@ -1,0 +1,72 @@
+import { useState } from 'react';
+import { Meta, Description, Props, Preview, Story } from '@storybook/addon-docs/blocks';
+
+import { CheckboxGroup } from '.';
+
+<Meta title="Core/CheckboxGroup" component={CheckboxGroup} />
+
+# CheckboxGroup
+
+<Props of={CheckboxGroup} />
+
+<Preview>
+  <Story name="CheckboxGroup">
+  {
+    () => {
+      const [value, setValue] = useState([]);
+      return <CheckboxGroup
+          name="option1"
+          label="Options"
+          value={value}
+          onChange={event => setValue(value.includes(event.target.value) ? value.filter(el => el !== event.target.value) : [...value, event.target.value])}
+          options={[
+            { value: '1', title: 'option 1', description: 'option 1 description' },
+            { value: '2', title: 'option 2' },
+          ]}
+        />
+    }
+  }
+  </Story>
+</Preview>
+
+<Preview>
+  <Story name="readonly">
+  {
+    () => {
+      const [value, setValue] = useState(['1', '2']);
+      return <CheckboxGroup
+          name="option2"
+          label="Options"
+          readonly
+          value={value}
+          onChange={event => setValue(value.includes(event.target.value) ? value.filter(el => el !== event.target.value) : [...value, event.target.value])}
+          options={[
+            { value: '1', title: 'option 1' },
+            { value: '2', title: 'option 2' },
+          ]}
+        />
+    }
+  }
+  </Story>
+</Preview>
+
+<Preview>
+  <Story name="disabled">
+  {
+    () => {
+      const [value, setValue] = useState(['1']);
+      return <CheckboxGroup
+          name="option3"
+          label="Options"
+          disabled
+          value={value}
+          onChange={event => setValue(value.includes(event.target.value) ? value.filter(el => el !== event.target.value) : [...value, event.target.value])}
+          options={[
+            { value: '1', title: 'option 1' },
+            { value: '2', title: 'option 2' },
+          ]}
+        />
+    }
+  }
+  </Story>
+</Preview>

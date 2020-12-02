@@ -4,6 +4,7 @@ import { Banner } from './banner';
 import { Breadcrumbs, PassiveBreadcrumb } from './breadcrumbs';
 import { Button } from './button';
 import { Checkbox } from './checkbox';
+import { CheckboxGroup } from './checkbox-group';
 import { DataList } from './datalist';
 import { Fieldset } from './fieldset';
 import { Info } from './info';
@@ -27,6 +28,7 @@ export {
   PassiveBreadcrumb,
   Button,
   Checkbox,
+  CheckboxGroup,
   DataList,
   Fieldset,
   Info,
