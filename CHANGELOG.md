@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/cft-group/elephas-react/compare/v1.3.1...v1.4.0) (2020-12-03)
+
+
+### Features
+
+* **checkbox-group:** add CheckboxGroup component ([41abeb0](https://github.com/cft-group/elephas-react/commit/41abeb08a1bf9ce159c3e473163f36f7baf6cd27))
+* **radio-group:** add error and hint fields ([69e12f5](https://github.com/cft-group/elephas-react/commit/69e12f5c1aed748fa407c6255cd6ee4b104cbb8a))
+* **radio-group:** support setting options' description ([a9d0eaa](https://github.com/cft-group/elephas-react/commit/a9d0eaa2d93ab45288bb8c4ae1a73d48412d537f))
+
+
+
+
+
 ## [1.3.1](https://github.com/cft-group/elephas-react/compare/v1.3.0...v1.3.1) (2020-11-03)
 
 
