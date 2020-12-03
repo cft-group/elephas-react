@@ -31,7 +31,7 @@ export const Fieldset = forwardRef<HTMLFieldSetElement, FieldsetProps>(
         ref={ref}
         {...rest}
       >
-        { legend && <legend className="_e_fieldset__legend">{ legend }</legend> }
+        { legend && <div className="_e_fieldset__legend">{ legend }</div> }
         { children }
         { error && <div className="_e_fieldset__error">{ error }</div> }
         {
