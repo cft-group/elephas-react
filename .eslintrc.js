@@ -31,6 +31,7 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'react/require-default-props': 'off',
     'typescript-sort-keys/interface': 'error',
+    'react/no-array-index-key': 'off'
   },
   settings: {
     react: {

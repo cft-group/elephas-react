@@ -26,9 +26,9 @@ export const CheckboxGroup = (props: CheckboxGroupProps) => {
     }
   };
 
-  const renderOptions = options.map((option) => (
+  const renderOptions = options.map((option, index) => (
     <Checkbox
-      key={option.value}
+      key={`${option.value}-${index}`}
       label={option.title}
       description={option.description}
       checked={value.includes(option.value)}
