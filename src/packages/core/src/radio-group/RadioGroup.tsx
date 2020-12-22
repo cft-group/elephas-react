@@ -28,9 +28,9 @@ export const RadioGroup = (props: RadioGroupProps) => {
     }
   };
 
-  const renderOptions = options.map((option) => (
+  const renderOptions = options.map((option, index) => (
     <Radio
-      key={option.value}
+      key={`${option.value}-${index}`}
       label={option.title}
       description={option.description}
       checked={option.value === value}
@@ -44,6 +44,7 @@ export const RadioGroup = (props: RadioGroupProps) => {
 
   return (
     <Fieldset
+      role="radiogroup"
       className={className}
       id={id}
       legend={legend}
