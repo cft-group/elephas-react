@@ -37,9 +37,9 @@ export function BaseInput<T extends HTMLAttributesComposite>(props: BaseInputPro
         {
           cloneElement<T>(children, {
             className: '_e_input__control',
-            disabled: appearance === 'disabled',
+            disabled: appearance === 'disabled' || (children.type === 'select' && appearance === 'readonly'),
             placeholder: ' ',
-            readOnly: appearance === 'readonly',
+            readOnly: appearance === 'readonly' && children.type !== 'select',
             ...rest,
           })
          }
