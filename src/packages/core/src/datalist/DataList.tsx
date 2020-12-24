@@ -28,6 +28,7 @@ export function DataList(props: DataListProps) {
         return (
           <div
             className={lineClassNames}
+            // eslint-disable-next-line react/no-array-index-key
             key={`${item.title}-${index}`}
           >
             <div className="_e_datalist__title" style={{ flexBasis: titleWidth }}>{ item.title }</div>

@@ -30,6 +30,7 @@ export const RadioGroup = (props: RadioGroupProps) => {
 
   const renderOptions = options.map((option, index) => (
     <Radio
+      // eslint-disable-next-line react/no-array-index-key
       key={`${option.value}-${index}`}
       label={option.title}
       description={option.description}

@@ -28,6 +28,7 @@ export const CheckboxGroup = (props: CheckboxGroupProps) => {
 
   const renderOptions = options.map((option, index) => (
     <Checkbox
+      // eslint-disable-next-line react/no-array-index-key
       key={`${option.value}-${index}`}
       label={option.title}
       description={option.description}
