@@ -34,5 +34,5 @@ export interface DataListProps extends CommonAttributes {
    * Title width in pixels.
    * @default 172
    */
-  titleWidth: number;
+  titleWidth?: number;
 }
