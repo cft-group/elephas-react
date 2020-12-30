@@ -41,9 +41,14 @@ export type AbstractInput<T extends HTMLAttributesComposite> = T & {
   isIconPassive?: boolean;
 
   /**
-   * Field label.
+   * Field label. If not provided, input will become labelless.
    */
-  label: string;
+  label?: string;
+
+  /**
+   * Placeholder. Only shown on labelless inputs.
+   */
+  placeholder?: string;
 
   /**
    * Field width.
