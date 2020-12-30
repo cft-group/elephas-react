@@ -11,6 +11,7 @@ export function BaseInput<T extends HTMLAttributesComposite>(props: BaseInputPro
     error,
     hint,
     label,
+    placeholder = '',
     width = '100%',
     icons,
     isIconPassive = false,
@@ -20,6 +21,7 @@ export function BaseInput<T extends HTMLAttributesComposite>(props: BaseInputPro
   const inputClassNames = classNames({
     [`${className}`]: className,
     _e_input: true,
+    _e_input_labelless: !label,
     [`_e_input_size_${width}`]: width !== '100%',
     [`_e_input_appearance_${appearance}`]: appearance !== 'default',
   });
@@ -38,14 +40,16 @@ export function BaseInput<T extends HTMLAttributesComposite>(props: BaseInputPro
           cloneElement<T>(children, {
             className: '_e_input__control',
             disabled: appearance === 'disabled' || (children.type === 'select' && appearance === 'readonly'),
-            placeholder: ' ',
+            placeholder: label ? ' ' : placeholder,
             readOnly: appearance === 'readonly' && children.type !== 'select',
             ...rest,
           })
          }
-        <span className="_e_input__label">
-          { label }
-        </span>
+        { label && (
+          <span className="_e_input__label">
+            { label }
+          </span>
+        )}
         <span className="_e_input__background" />
         <span className="_e_input__line" />
         { icons && (
