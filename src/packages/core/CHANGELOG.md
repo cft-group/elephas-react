@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/cft-group/elephas-react/compare/v1.4.1...v1.5.0) (2020-12-30)
+
+
+### Bug Fixes
+
+* **data-list:** make titleWidth optional ([4c00f70](https://github.com/cft-group/elephas-react/commit/4c00f70e491b59c77f09a415a164eb2f764d0013))
+
+
+### Features
+
+* **input:** add labelless input ([8aaa570](https://github.com/cft-group/elephas-react/commit/8aaa570af0497814ef3904451761086a42a7a238))
+
+
+
+
+
 ## [1.4.1](https://github.com/cft-group/elephas-react/compare/v1.4.0...v1.4.1) (2020-12-24)
 
 
