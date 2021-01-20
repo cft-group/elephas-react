@@ -17,6 +17,7 @@ import { Spinner } from './spinner';
 import { Tab, Tabs } from './tabs';
 import { Tag } from './tag';
 import { Textarea } from './textarea';
+import { ToggleButton } from './toggle-button';
 import { Tooltip } from './tooltip';
 import { Upload } from './upload';
 
@@ -42,6 +43,7 @@ export {
   Tabs,
   Tag,
   Textarea,
+  ToggleButton,
   Tooltip,
   Upload,
 };

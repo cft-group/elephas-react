@@ -1241,12 +1241,12 @@
   resolved "https://registry.yarnpkg.com/@commitlint/types/-/types-9.1.2.tgz#d05f66db03e3a3638a654e8badf2deb489eb220d"
   integrity sha512-r3fwVbVH+M8W0qYlBBZFsUwKe6NT5qvz+EmU7sr8VeN1cQ63z+3cfXyTo7WGGEMEgKiT0jboNAK3b1FZp8k9LQ==
 
-"@elephas/core@1.7.0", "@elephas/core@^1.2.0":
+"@elephas/core@1.7.0", "@elephas/core@^1.7.0":
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/@elephas/core/-/core-1.7.0.tgz#fe91055dff207af7fdfa5cc58defd4b376c9a289"
   integrity sha512-TmgISctjlhNbJrMxs5bw5hMy0iIqAqWvYaQvMvyvetUB8Ftz4xYL8BNEhiWaLbZVupjgY0XDJshxkdkD/uB4Ag==
 
-"@elephas/layout@^1.2.0":
+"@elephas/layout@^1.7.0":
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/@elephas/layout/-/layout-1.7.0.tgz#e6b850e6b5a08e0fc649c25d379ca1537eb99931"
   integrity sha512-qx3GTzJmLtgeKF7H3MK5fFTv/NU0yIRW8MizkCy1DwFBFoqkhTC5N0ydWq3nIAmY+d3oNW4TcKBaOhI0+HcfEw==
@@ -2562,7 +2562,7 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@storybook/addon-docs@^6.0.3":
+"@storybook/addon-docs@^6.1.14":
   version "6.1.14"
   resolved "https://registry.yarnpkg.com/@storybook/addon-docs/-/addon-docs-6.1.14.tgz#fc1feac0e7e8b9c46efcd0b9c1f8ba2d306a9b3b"
   integrity sha512-Skj9crqaEEISghobjtu3EKbSTwGVK2e0gTu94WqPL3GOugvGgk7b1VrCgf5fXKcdwbtZktm48CtdmeP5R5U9NQ==
@@ -2867,7 +2867,7 @@
   dependencies:
     core-js "^3.0.1"
 
-"@storybook/react@^6.0.3":
+"@storybook/react@^6.1.14":
   version "6.1.14"
   resolved "https://registry.yarnpkg.com/@storybook/react/-/react-6.1.14.tgz#436e9b90096b1d7c83f7f073b5baf47212b2e425"
   integrity sha512-M99wHjc/5z+Wz1FdFaScVs6dyAi/6PdcIx5Fyip6Qd8aKwm1XyYoOMql5Vu3Cf560feDYCKS4phzyEZ7EJy+EQ==
