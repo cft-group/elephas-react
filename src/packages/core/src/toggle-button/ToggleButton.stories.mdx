@@ -1,0 +1,42 @@
+import { useState } from 'react';
+import { Meta, Description, Props, Preview, Story } from '@storybook/addon-docs/blocks';
+
+import { ToggleButton } from '.';
+
+<Meta title="Core/ToggleButton" component={ToggleButton} />
+
+# ToggleButton
+
+<Props of={ToggleButton} />
+
+ToggleButton with single selected value
+
+<Preview>
+  <Story name="ToggleButton1">
+  {
+    () => {
+        const [value, setValue] = useState('Middle');
+        const items = ['Left', 'Middle', 'Right'].map((value) => ({ value }));
+        return (
+          <ToggleButton items={items} value={value} onChange={(event, val) => setValue(val)} />
+        )
+      }
+  }
+  </Story>
+</Preview>
+
+ToggleButton with multiple selected value
+
+<Preview>
+  <Story name="ToggleButton2">
+  {
+    () => {
+        const [value, setValue] = useState(['Left', 'Middle']);
+        const items = ['Left', 'Middle', 'Right'].map((value) => ({ value }));
+        return (
+          <ToggleButton items={items} multiple value={value} onChange={(event, val) => setValue(val)} />
+        )
+      }
+  }
+  </Story>
+</Preview>
