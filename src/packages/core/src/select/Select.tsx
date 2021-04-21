@@ -17,7 +17,9 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>(
     const {
       className,
       defaultValue,
+      label,
       options,
+      placeholder,
       ...rest
     } = props;
 
@@ -26,6 +28,7 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>(
     return (
       <BaseInput
         className={selectClassName}
+        label={label}
         {...rest}
         icons={ArrowIcon}
         isIconPassive
@@ -35,6 +38,15 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>(
           ref={ref}
           required
         >
+          { !label && (
+            <option
+              disabled
+              value=""
+              key=""
+            >
+              { placeholder }
+            </option>
+          ) }
           { options.map((option) => (
             <option
               value={option.value}
