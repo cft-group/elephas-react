@@ -5,7 +5,7 @@ export interface InfoProps extends CommonAttributes {
   /**
    * Visual appearance.
    */
-  appearance: 'warning' | 'error';
+  appearance: 'notice' | 'warning' | 'error';
 
   /**
    * Info contents.

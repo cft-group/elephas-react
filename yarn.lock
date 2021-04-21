@@ -1299,17 +1299,17 @@
   resolved "https://registry.yarnpkg.com/@commitlint/types/-/types-9.1.2.tgz#d05f66db03e3a3638a654e8badf2deb489eb220d"
   integrity sha512-r3fwVbVH+M8W0qYlBBZFsUwKe6NT5qvz+EmU7sr8VeN1cQ63z+3cfXyTo7WGGEMEgKiT0jboNAK3b1FZp8k9LQ==
 
-"@elephas/core@1.9.0", "@elephas/core@^1.7.0":
-  version "1.9.0"
-  resolved "https://registry.yarnpkg.com/@elephas/core/-/core-1.9.0.tgz#ff48555bc31ab395d94ce66f2f7bf150c300cd50"
-  integrity sha512-HVKDgxzlQFimzl60PawTc1cbxJNWlq1rVapD6krbNXuvBOi9yhfayyjaip+lAQlDvnDiyuzRlucjMr5qwSqFXQ==
+"@elephas/core@1.10.0", "@elephas/core@^1.10.0":
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/@elephas/core/-/core-1.10.0.tgz#8f278e45827e3ba7e6de7a2370090c42144ccabb"
+  integrity sha512-TqmlTpG3LinPPWZSTDIbFjKaX7yTjFEPy626QGp9ovb5/23Ijh2n6edQwgM90msGnG/kKmN371fKsunHzHw7kg==
 
-"@elephas/layout@^1.7.0":
-  version "1.9.0"
-  resolved "https://registry.yarnpkg.com/@elephas/layout/-/layout-1.9.0.tgz#baff85327716a9dfea21f623b36a2dcee4cfe2c8"
-  integrity sha512-JUN7O6SsC3qs3S7lKPH04knfTKlVOCLl8hu+q6tgEOdLk7TILk0/7+sUgmmsdjRnXOjZi7eg8EXrfaxc2t9glg==
+"@elephas/layout@^1.10.0":
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/@elephas/layout/-/layout-1.10.0.tgz#934831a6b73d5b519dfae5f0379d5e8cc5725725"
+  integrity sha512-OmgLAt+ldFLdM+A6MGIAs0GN4AuIGAauVmInz6NC8i320SssurUATnoD3czZ8bVGgpqCaxEDkGlWrv/Q4XV9Dw==
   dependencies:
-    "@elephas/core" "1.9.0"
+    "@elephas/core" "1.10.0"
 
 "@emotion/cache@^10.0.27":
   version "10.0.29"
