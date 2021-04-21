@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.7.0](https://github.com/cft-group/elephas-react/compare/v1.6.0...v1.7.0) (2021-04-21)
+
+
+### Features
+
+* **info:** add notice appearance ([d1578c4](https://github.com/cft-group/elephas-react/commit/d1578c453bde1bc56efb017150ba90a510efcd40))
+
+
+
+
+
 # [1.6.0](https://github.com/cft-group/elephas-react/compare/v1.5.0...v1.6.0) (2021-01-20)
 
 
