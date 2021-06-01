@@ -1336,10 +1336,15 @@
   resolved "https://registry.yarnpkg.com/@commitlint/types/-/types-9.1.2.tgz#d05f66db03e3a3638a654e8badf2deb489eb220d"
   integrity sha512-r3fwVbVH+M8W0qYlBBZFsUwKe6NT5qvz+EmU7sr8VeN1cQ63z+3cfXyTo7WGGEMEgKiT0jboNAK3b1FZp8k9LQ==
 
-"@elephas/core@1.10.0", "@elephas/core@^1.10.0":
+"@elephas/core@1.10.0":
   version "1.10.0"
   resolved "https://registry.yarnpkg.com/@elephas/core/-/core-1.10.0.tgz#8f278e45827e3ba7e6de7a2370090c42144ccabb"
   integrity sha512-TqmlTpG3LinPPWZSTDIbFjKaX7yTjFEPy626QGp9ovb5/23Ijh2n6edQwgM90msGnG/kKmN371fKsunHzHw7kg==
+
+"@elephas/core@^1.10.0":
+  version "1.10.1"
+  resolved "https://registry.yarnpkg.com/@elephas/core/-/core-1.10.1.tgz#34206a47335962b4e14cfebeea96770cca5de5fd"
+  integrity sha512-Bz8yT5qsDB+bLNUa6BLm3UMNF+8tJ8pLBjGcDqb4XuWcYVF/BMaviS6am6Zv1xwVcu1mE+ywopOn9PpyhBhUvQ==
 
 "@elephas/layout@^1.10.0":
   version "1.10.0"
