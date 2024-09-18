@@ -1,4 +1,4 @@
-import { MouseEvent } from 'react';
+import { ReactNode, MouseEvent } from 'react';
 
 export interface SnackbarProps {
   /**
@@ -26,7 +26,7 @@ export interface SnackbarProps {
   /**
      * Message to display.
      */
-  message: string,
+  message: ReactNode,
 
   /**
      * Callback fired when the component requests to be closed.

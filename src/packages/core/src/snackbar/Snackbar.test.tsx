@@ -20,7 +20,7 @@ describe('<Snackbar />', () => {
     const { container } = render(
       <Snackbar
         buttonText={btnText}
-        message={message}
+        message={<span>{message}</span>}
         isOpen={false}
         onClose={onClose}
       />,
