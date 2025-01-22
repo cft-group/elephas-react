@@ -3,17 +3,6 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [1.8.0](https://github.com/cft-group/elephas-react/compare/v1.7.0...v1.8.0) (2025-01-22)
-
-
-### Features
-
-* **snackbar:** change message type to ReactNode ([6b4ae3e](https://github.com/cft-group/elephas-react/commit/6b4ae3e2870ac9cf6ef55f7136e83aae60e5b56e))
-
-
-
-
-
 # [1.7.0](https://github.com/cft-group/elephas-react/compare/v1.6.0...v1.7.0) (2021-04-21)
 
 
