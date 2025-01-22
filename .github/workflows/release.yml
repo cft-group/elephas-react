@@ -38,6 +38,8 @@ jobs:
         persist-credentials: false
     - name: Install dependencies
       run: yarn install
+    - name: Create .npmrc
+      run: echo "node-options="--openssl-legacy-provider"" >> ~/.npmrc
     - name: Bootstrap packages
       run: ./node_modules/.bin/lerna bootstrap
     - name: Build storybook
