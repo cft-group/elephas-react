@@ -21,7 +21,7 @@ jobs:
       - name: Fetch tags
         run: git fetch --prune --unshallow
       - name: Install lerna
-        run: yarn global add lerna
+        run: yarn global add lerna@3.22.1
       - name: Bootstrap packages
         run: ~/.yarn/bin/lerna bootstrap
       - name: Release packages
