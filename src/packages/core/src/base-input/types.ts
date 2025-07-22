@@ -30,7 +30,7 @@ export type AbstractInput<T extends HTMLAttributesComposite> = T & {
   /**
    * Hint message. Hidden when appearance is set to `error`.
    */
-  hint?: string;
+  hint?: ReactNode,
 
   icons?: ReactNode,
 

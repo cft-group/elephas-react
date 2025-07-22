@@ -1,0 +1,115 @@
+
+import { useState } from 'react';
+import { Meta, Description, Props, Preview, Story } from '@storybook/addon-docs/blocks';
+import { Dropdown } from '.';
+
+<Meta title="Core/Dropdown" component={Dropdown} />
+
+# Dropdown
+
+<Props of={Dropdown} />
+
+<Preview>
+  <Story name="Dropdown">
+  {
+    () => {
+        const [value, setValue] = useState();
+        return (
+              <div style={{ height: 200 }}>
+                <Dropdown
+                  label="Option"
+                  width="4"
+                  value={value}
+                  onChange={setValue}
+                  hint="Description"
+                  options={[
+                    { value: '1', title: 'One' },
+                    { value: '2', title: 'Two' },
+                    { value: '3', title: 'Three' },
+                  ]}
+                />
+            </div>
+        )
+      }
+  }
+  </Story>
+</Preview>
+
+<Preview>
+  <Story name="Dropdown-readonly">
+  {
+    () => {
+        const [value, setValue] = useState('2');
+        return (
+              <div style={{ height: 200 }}>
+                <Dropdown
+                  label="Option"
+                  width="4"
+                  appearance="readonly"
+                  value={value}
+                  onChange={setValue}
+                  options={[
+                    { value: '1', title: 'One' },
+                    { value: '2', title: 'Two' },
+                    { value: '3', title: 'Three' },
+                  ]}
+                />
+            </div>
+        )
+      }
+  }
+  </Story>
+</Preview>
+
+<Preview>
+  <Story name="Dropdown-disabled">
+  {
+    () => {
+        const [value, setValue] = useState(undefined);
+        return (
+              <div style={{ height: 200 }}>
+                <Dropdown
+                  label="Option"
+                  width="4"
+                  appearance="disabled"
+                  defaultValue={'3'}
+                  onChange={setValue}
+                  options={[
+                    { value: '1', title: 'One' },
+                    { value: '2', title: 'Two' },
+                    { value: '3', title: 'Three' },
+                  ]}
+                />
+            </div>
+        )
+      }
+  }
+  </Story>
+</Preview>
+
+<Preview>
+  <Story name="Dropdown-error">
+  {
+    () => {
+        const [value, setValue] = useState(undefined);
+        return (
+              <div style={{ height: 200 }}>
+                <Dropdown
+                  label="Option"
+                  width="4"
+                  appearance="error"
+                  value={value}
+                  onChange={setValue}
+                  error="Error"
+                  options={[
+                    { value: '1', title: 'One' },
+                    { value: '2', title: 'Two' },
+                    { value: '3', title: 'Three' },
+                  ]}
+                />
+            </div>
+        )
+      }
+  }
+  </Story>
+</Preview>
