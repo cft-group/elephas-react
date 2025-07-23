@@ -22,7 +22,7 @@ export type DropdownProps = AbstractInput<InputHTMLAttributes<HTMLSelectElement>
   /**
    * Change handler.
    */
-  onChange: (value: string) => void;
+  onChange?: (value: string) => void;
 
   /**
    * Dropdown options.
