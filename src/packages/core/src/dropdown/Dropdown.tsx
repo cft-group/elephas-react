@@ -19,6 +19,9 @@ export const Dropdown = forwardRef<HTMLInputElement, DropdownProps>(
       label,
       options,
       value,
+      id,
+      name,
+      required,
       defaultValue,
       onChange,
       ...rest
@@ -52,6 +55,9 @@ export const Dropdown = forwardRef<HTMLInputElement, DropdownProps>(
             disabled={rest.appearance === 'disabled'}
             readOnly
             value={selectedOption?.title ?? ''}
+            id={id}
+            name={name}
+            required={required}
           />
           <div className="_e_dropdown__card" style={rest.appearance === 'readonly' ? { display: 'none' } : {}}>
             {options.map((item) => (
@@ -63,7 +69,7 @@ export const Dropdown = forwardRef<HTMLInputElement, DropdownProps>(
                   '_e_dropdown__item',
                   item.value === currentValue && '_e_dropdown__item_selected',
                 )}
-                onMouseDown={() => onChange(item.value)}
+                onMouseDown={() => onChange?.(item.value)}
               >
                 {item.title}
               </div>
