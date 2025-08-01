@@ -1,0 +1,120 @@
+import { useState } from 'react';
+import { Meta, Description, Props, Preview, Story } from '@storybook/addon-docs/blocks';
+
+import { Table } from '.';
+
+<Meta title="Core/Table" component={Table} />
+
+# Table
+
+<Props of={Table} />
+
+<Preview>
+  <Table>
+    <Table.Head>
+      <Table.HeadCell style={{ flexBasis: '120px', flexGrow: 2 }}>Номер</Table.HeadCell>
+      <Table.HeadCell style={{ flexBasis: '160px', flexGrow: 2 }}>Зарегистрирована</Table.HeadCell>
+      <Table.HeadCell style={{ flexBasis: '100px', flexGrow: 6 }}>Критичность</Table.HeadCell>
+      <Table.HeadCell style={{ flexBasis: '140px', flexGrow: 8 }}>Тип заявки</Table.HeadCell>
+      <Table.HeadCell style={{ flexBasis: '200px', flexGrow: 8 }}>Состояние</Table.HeadCell>
+    </Table.Head>
+    <Table.Body>
+      <Table.Row>
+        <Table.Cell style={{ flexBasis: '120px', flexGrow: 2 }}>SUP0034142</Table.Cell>
+        <Table.Cell style={{ flexBasis: '160px', flexGrow: 2 }}>02.03.2020 18:12</Table.Cell>
+        <Table.Cell style={{ flexBasis: '100px', flexGrow: 6 }}>Обычная</Table.Cell>
+        <Table.Cell style={{ flexBasis: '140px', flexGrow: 8 }}>Несоответствие</Table.Cell>
+        <Table.Cell style={{ flexBasis: '200px', flexGrow: 8 }}>Первичная обработка</Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell style={{ flexBasis: '120px', flexGrow: 2 }}>SUP0034142</Table.Cell>
+        <Table.Cell style={{ flexBasis: '160px', flexGrow: 2 }}>02.03.2020 18:12</Table.Cell>
+        <Table.Cell style={{ flexBasis: '100px', flexGrow: 6 }}>Обычная</Table.Cell>
+        <Table.Cell style={{ flexBasis: '140px', flexGrow: 8 }}>Несоответствие</Table.Cell>
+        <Table.Cell style={{ flexBasis: '200px', flexGrow: 8 }}>Первичная обработка</Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell style={{ flexBasis: '120px', flexGrow: 2 }}>SUP0034142</Table.Cell>
+        <Table.Cell style={{ flexBasis: '160px', flexGrow: 2 }}>02.03.2020 18:12</Table.Cell>
+        <Table.Cell style={{ flexBasis: '100px', flexGrow: 6 }}>Обычная</Table.Cell>
+        <Table.Cell style={{ flexBasis: '140px', flexGrow: 8 }}>Несоответствие</Table.Cell>
+        <Table.Cell style={{ flexBasis: '200px', flexGrow: 8 }}>Первичная обработка</Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell style={{ flexBasis: '120px', flexGrow: 2 }}>SUP0034142</Table.Cell>
+        <Table.Cell style={{ flexBasis: '160px', flexGrow: 2 }}>02.03.2020 18:12</Table.Cell>
+        <Table.Cell style={{ flexBasis: '100px', flexGrow: 6 }}>Обычная</Table.Cell>
+        <Table.Cell style={{ flexBasis: '140px', flexGrow: 8 }}>Несоответствие</Table.Cell>
+        <Table.Cell style={{ flexBasis: '200px', flexGrow: 8 }}>Первичная обработка</Table.Cell>
+      </Table.Row>
+    </Table.Body>
+  </Table>
+</Preview>
+
+
+Table with pagination
+
+<Preview>
+  <Table clickable openMenu>
+    <Table.Menu>
+      <div className="_e_tmenu__text">
+        Выбран 1 файл.
+        <span className="_e_tmenu__link">Выбрать все 10</span>
+      </div>
+    </Table.Menu>
+    <Table.Head>
+      <Table.HeadCell style={{ flexBasis: '120px', flexGrow: 2 }}>Номер</Table.HeadCell>
+      <Table.HeadCell style={{ flexBasis: '160px', flexGrow: 2 }}>Зарегистрирована</Table.HeadCell>
+      <Table.HeadCell style={{ flexBasis: '100px', flexGrow: 6 }}>Критичность</Table.HeadCell>
+      <Table.HeadCell style={{ flexBasis: '140px', flexGrow: 8 }}>Тип заявки</Table.HeadCell>
+      <Table.HeadCell style={{ flexBasis: '200px', flexGrow: 8 }}>Состояние</Table.HeadCell>
+    </Table.Head>
+    <Table.Body>
+      <Table.Row>
+        <Table.Cell style={{ flexBasis: '120px', flexGrow: 2 }}>SUP0034142</Table.Cell>
+        <Table.Cell style={{ flexBasis: '160px', flexGrow: 2 }}>02.03.2020 18:12</Table.Cell>
+        <Table.Cell style={{ flexBasis: '100px', flexGrow: 6 }}>Обычная</Table.Cell>
+        <Table.Cell style={{ flexBasis: '140px', flexGrow: 8 }}>Несоответствие</Table.Cell>
+        <Table.Cell style={{ flexBasis: '200px', flexGrow: 8 }}>Первичная обработка</Table.Cell>
+      </Table.Row>
+      <Table.Row selected>
+        <Table.Cell style={{ flexBasis: '120px', flexGrow: 2 }}>SUP0034142</Table.Cell>
+        <Table.Cell style={{ flexBasis: '160px', flexGrow: 2 }}>02.03.2020 18:12</Table.Cell>
+        <Table.Cell style={{ flexBasis: '100px', flexGrow: 6 }}>Обычная</Table.Cell>
+        <Table.Cell style={{ flexBasis: '140px', flexGrow: 8 }}>Несоответствие</Table.Cell>
+        <Table.Cell style={{ flexBasis: '200px', flexGrow: 8 }}>Первичная обработка</Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell style={{ flexBasis: '120px', flexGrow: 2 }}>SUP0034142</Table.Cell>
+        <Table.Cell style={{ flexBasis: '160px', flexGrow: 2 }}>02.03.2020 18:12</Table.Cell>
+        <Table.Cell style={{ flexBasis: '100px', flexGrow: 6 }}>Обычная</Table.Cell>
+        <Table.Cell style={{ flexBasis: '140px', flexGrow: 8 }}>Несоответствие</Table.Cell>
+        <Table.Cell style={{ flexBasis: '200px', flexGrow: 8 }}>Первичная обработка</Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell style={{ flexBasis: '120px', flexGrow: 2 }}>SUP0034142</Table.Cell>
+        <Table.Cell style={{ flexBasis: '160px', flexGrow: 2 }}>02.03.2020 18:12</Table.Cell>
+        <Table.Cell style={{ flexBasis: '100px', flexGrow: 6 }}>Обычная</Table.Cell>
+        <Table.Cell style={{ flexBasis: '140px', flexGrow: 8 }}>Несоответствие</Table.Cell>
+        <Table.Cell style={{ flexBasis: '200px', flexGrow: 8 }}>Первичная обработка</Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell style={{ flexBasis: '120px', flexGrow: 2 }}>SUP0034142</Table.Cell>
+        <Table.Cell style={{ flexBasis: '160px', flexGrow: 2 }}>02.03.2020 18:12</Table.Cell>
+        <Table.Cell style={{ flexBasis: '100px', flexGrow: 6 }}>Обычная</Table.Cell>
+        <Table.Cell style={{ flexBasis: '140px', flexGrow: 8 }}>Несоответствие</Table.Cell>
+        <Table.Cell style={{ flexBasis: '200px', flexGrow: 8 }}>Первичная обработка</Table.Cell>
+      </Table.Row>
+    </Table.Body>
+    <Table.Footer>
+      <div />
+      <Table.Pagination
+        page={1}
+        total={1000}
+        pageSize={10}
+        onPageChange={(newPage) => console.log(newPage)}
+      />
+    </Table.Footer>
+  </Table>
+</Preview>
+
