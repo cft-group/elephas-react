@@ -59,8 +59,8 @@ const Pagination = ({
   onPageChange,
 }: PaginationProps) => {
   const totalPages = Math.ceil(total / pageSize);
-  const start = (page - 1) * pageSize + 1;
-  const end = Math.min(page * pageSize, total);
+  const start = total === 0 ? 0 : (page - 1) * pageSize + 1;
+  const end = total === 0 ? 0 : Math.min(page * pageSize, total);
 
   const prevDisabled = page <= 1;
   const nextDisabled = page >= totalPages;
@@ -73,12 +73,20 @@ const Pagination = ({
       <span
         role="button"
         tabIndex={0}
-        className={classNames('_e_tpagination__action', prevDisabled && '_e_tpagination__action_disabled')}
-        onClick={() => !nextDisabled && onPageChange(page - 1)}
-        onKeyDown={(e) => {
-          if (e.key === 'Enter' || e.key === ' ') {
-            e.preventDefault();
-            !prevDisabled && onPageChange(page - 1);
+        className={classNames('_e_tpagination__action', {
+          _e_tpagination__action_disabled: prevDisabled,
+        })}
+        onClick={() => {
+          if (!prevDisabled) {
+            onPageChange(page - 1);
+          }
+        }}
+        onKeyDown={(event) => {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            if (!prevDisabled) {
+              onPageChange(page - 1);
+            }
           }
         }}
       >
@@ -91,12 +99,20 @@ const Pagination = ({
       <span
         role="button"
         tabIndex={0}
-        className={classNames('_e_tpagination__action', nextDisabled && '_e_tpagination__action_disabled')}
-        onClick={() => !nextDisabled && onPageChange(page + 1)}
-        onKeyDown={(e) => {
-          if (e.key === 'Enter' || e.key === ' ') {
-            e.preventDefault();
-            !prevDisabled && onPageChange(page + 1);
+        className={classNames('_e_tpagination__action', {
+          _e_tpagination__action_disabled: prevDisabled,
+        })}
+        onClick={() => {
+          if (!nextDisabled) {
+            onPageChange(page + 1);
+          }
+        }}
+        onKeyDown={(event) => {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            if (!nextDisabled) {
+              onPageChange(page + 1);
+            }
           }
         }}
       >
