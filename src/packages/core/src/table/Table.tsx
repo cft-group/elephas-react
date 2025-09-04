@@ -100,7 +100,7 @@ const Pagination = ({
         role="button"
         tabIndex={0}
         className={classNames('_e_tpagination__action', {
-          _e_tpagination__action_disabled: prevDisabled,
+          _e_tpagination__action_disabled: nextDisabled,
         })}
         onClick={() => {
           if (!nextDisabled) {
