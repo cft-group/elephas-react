@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.9.0](https://github.com/cft-group/elephas-react/compare/v1.7.0...v1.9.0) (2025-11-09)
+
+
+
+# 1.9.0 (2025-10-16)
+
+
+### Bug Fixes
+
+* pagination next button disabled class ([d88145e](https://github.com/cft-group/elephas-react/commit/d88145efa647c5264ffa041bec86daf7f4efbec2))
+* use if instead of conditional operator in Table ([3958b70](https://github.com/cft-group/elephas-react/commit/3958b706636a5839311b35c62418d15b82e94eae))
+
+
+### Features
+
+* **dropdown:** add Dropdown component ([a70a98e](https://github.com/cft-group/elephas-react/commit/a70a98e8e65ac54db1df42c84dfaec6ee3927a67))
+* **menu:** add menu component ([2b4f439](https://github.com/cft-group/elephas-react/commit/2b4f439a20551f11cbc7d4e204c8961779bcdfa9))
+* **modal:** add Modal component ([7da1e78](https://github.com/cft-group/elephas-react/commit/7da1e78091b28ca3b6b56c93dbac9d931bf94270))
+* **snackbar:** change message type to ReactNode ([6b4ae3e](https://github.com/cft-group/elephas-react/commit/6b4ae3e2870ac9cf6ef55f7136e83aae60e5b56e))
+* **table:** add table component ([65ffa29](https://github.com/cft-group/elephas-react/commit/65ffa298d7442889988819dd4ef202be4ed2deba))
+
+
+
+
+
 # [1.8.0](https://github.com/cft-group/elephas-react/compare/v1.7.0...v1.8.0) (2025-01-22)
 
 
