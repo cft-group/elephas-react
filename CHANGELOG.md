@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.9.1](https://github.com/cft-group/elephas-react/compare/v1.9.0...v1.9.1) (2025-12-08)
+
+
+### Bug Fixes
+
+* export missing components ([a45394b](https://github.com/cft-group/elephas-react/commit/a45394b8be38005a0c1043ad4544d0d7475752ad))
+
+
+
+
+
 # [1.9.0](https://github.com/cft-group/elephas-react/compare/v1.7.0...v1.9.0) (2025-11-09)
 
 

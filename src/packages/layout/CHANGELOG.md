@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.9.1](https://github.com/cft-group/elephas-react/compare/v1.9.0...v1.9.1) (2025-12-08)
+
+**Note:** Version bump only for package @elephas/react-layout
+
+
+
+
+
 # [1.9.0](https://github.com/cft-group/elephas-react/compare/v1.7.0...v1.9.0) (2025-11-09)
 
 **Note:** Version bump only for package @elephas/react-layout
